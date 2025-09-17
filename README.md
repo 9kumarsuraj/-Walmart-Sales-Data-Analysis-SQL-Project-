@@ -7,7 +7,10 @@
 This project analyzes Walmart sales data using PostgreSQL.
 The goal is to answer business questions related to products, sales, branches, and customers.
 
-Dataset: <a href=https://https://www.kaggle.com/datasets/antaesterlin/walmart-commerce-data> Dataset: Kaggle Walmart Commerce Data </a> <br />
+Dataset: <a href="https://www.kaggle.com/datasets/antaesterlin/walmart-commerce-data" target="_blank" rel="noopener noreferrer"
+   style="display:inline-block;padding:10px 16px;background:#1776d2;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">
+  Kaggle Walmart Commerce Data
+</a>
 
 # 📂 Data Setup 
 
@@ -52,7 +55,7 @@ FROM 'D:\sql data\WalmartSQL repository.csv'
 DELIMITER ';' CSV HEADER QUOTE '"';
 ```
 
-## -- Alter Columns
+## 📋 -- Alter Columns
 ```
 ALTER TABLE walmart_sales RENAME COLUMN product_line TO product_type;
 ALTER TABLE walmart_sales RENAME COLUMN dtme TO sale_date;
