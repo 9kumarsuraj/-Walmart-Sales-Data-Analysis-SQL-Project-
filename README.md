@@ -7,13 +7,13 @@
 
 This project analyzes Walmart sales data using PostgreSQL. The goal is to answer business questions related to products, sales, branches, and customers.
  
-
+---
  Dataset: <a href="https://www.kaggle.com/datasets/antaesterlin/walmart-commerce-data" target="_blank" rel="noopener noreferrer"
    style="display:inline-block;padding:10px 16px;background:#1776d2;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">
   Kaggle Walmart Commerce Data
 </a>
-
-
+---
+---
 # 📂 Data Setup 
 
 ## Create Database
