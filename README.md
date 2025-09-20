@@ -2,22 +2,26 @@
 
 
 # 🛒 Walmart Sales Data Analysis (SQL Project)
+
 ## Project Overview
 
-This project analyzes Walmart sales data using PostgreSQL.
-The goal is to answer business questions related to products, sales, branches, and customers.
+This project analyzes Walmart sales data using PostgreSQL. The goal is to answer business questions related to products, sales, branches, and customers.
+ 
 
-Dataset: <a href="https://www.kaggle.com/datasets/antaesterlin/walmart-commerce-data" target="_blank" rel="noopener noreferrer"
+ Dataset: <a href="https://www.kaggle.com/datasets/antaesterlin/walmart-commerce-data" target="_blank" rel="noopener noreferrer"
    style="display:inline-block;padding:10px 16px;background:#1776d2;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">
   Kaggle Walmart Commerce Data
 </a>
 
+
 # 📂 Data Setup 
 
-## 🛢️ -- Create Database
+## Create Database
 ```
 CREATE DATABASE walmartsalesdata;
-
+```
+## Create Table
+```
 -- Drop Table if already exists
 DROP TABLE IF EXISTS walmart_sales;
 
@@ -45,7 +49,7 @@ CREATE TABLE walmart_sales (
     month_name VARCHAR(30)
 );
 ```
-## 📂  -- Import Data
+## Import Data
 ```
 COPY walmart_sales (
     "invoice_id","branch","city","customer_type","gender","product_line",
@@ -55,7 +59,7 @@ FROM 'D:\sql data\WalmartSQL repository.csv'
 DELIMITER ';' CSV HEADER QUOTE '"';
 ```
 
-## 📋 -- Alter Columns
+## Alter Columns
 ```
 ALTER TABLE walmart_sales RENAME COLUMN product_line TO product_type;
 ALTER TABLE walmart_sales RENAME COLUMN dtme TO sale_date;
@@ -324,7 +328,7 @@ WHERE total > 300
 GROUP BY branch
 ORDER BY no_of_transactions DESC;
 ```
-## ⚙️ Tools & Technologies
+##  Tools & Technologies
  <ul>
 <li>PostgreSQL</li> 
 <li>Kaggle Walmart Commerce Data</li> 
@@ -332,7 +336,7 @@ ORDER BY no_of_transactions DESC;
 <li>Window Functions for advanced analysis</li> 
 </ul>
 
-## 📌 Key Insights
+##  Key Insights
  <ul>
 <li>Identified most popular product types by city, branch, and gender.</li> 
 <li>Found lowest margin products impacting profitability.</li> 
