@@ -5,8 +5,32 @@
 
 ## Project Overview
 
-This project analyzes Walmart sales data using PostgreSQL. The goal is to answer business questions related to products, sales, branches, and customers.
- 
+This project demonstrates a comprehensive SQL-based analysis of Walmart’s retail sales data. The goal is to simulate a real-world business intelligence setup for retail operations, providing insights into product performance, sales trends, customer behavior, and payment patterns. The project covers database creation, data import, table design, data cleaning, and advanced querying techniques to derive actionable insights for strategic decision-making.
+
+## Key Features
+<ul>
+<li> Database Design: Created a relational database (walmartsalesdata) and structured the walmart_sales table with appropriate data types, constraints, and indexes. </li>
+
+<li> Data Import & Cleaning: Imported CSV data into SQL, renamed and optimized columns, added calculated fields such as product_category and time_of_day. </li>
+
+<li> Product Analysis: Identified top-selling products, highest revenue and profit contributors, average unit prices, and product popularity across cities and branches. </li>
+
+<li> Sales Analysis: Analyzed total transactions, revenue trends by month/day/time, branch and city performance, and payment method distribution. </li>
+
+<li> Customer Analysis: Examined spending patterns by customer type and gender, product preferences, high-value transactions, and average ratings by customer and payment type. </li>
+
+<li> Advanced SQL Queries: Utilized aggregation, window functions (RANK(), ROW_NUMBER()), conditional logic (CASE WHEN), and filtering to generate meaningful insights. </li>
+</ul>
+
+ ## Business Impact
+ <ul>
+<li> Helps retail managers and analysts identify top-performing products and branches. </li>
+
+<li> Supports marketing and sales teams with insights on customer behavior and high-value segments. </li>
+
+<li> Provides a foundation for building dashboards and business intelligence reports. </li>
+</ul> 
+
 ---
  Dataset: <a href="https://www.kaggle.com/datasets/antaesterlin/walmart-commerce-data" target="_blank" rel="noopener noreferrer"
    style="display:inline-block;padding:10px 16px;background:#1776d2;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">
@@ -336,14 +360,6 @@ ORDER BY no_of_transactions DESC;
 <li>Window Functions for advanced analysis</li> 
 </ul>
 
-##  Key Insights
- <ul>
-<li>Identified most popular product types by city, branch, and gender.</li> 
-<li>Found lowest margin products impacting profitability.</li> 
-<li>Analyzed monthly sales & profit trends.</li> 
-<li>Measured payment method distribution.</li> 
-<li>Highlighted branch contributions to overall sales.</li> 
-</ul>
 
 # Feedback & Collaboration
   Have suggestions or ideas to improve? <br />
